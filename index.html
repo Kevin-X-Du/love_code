@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>动态主页</title>
+    <title>all集合</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <style>
-body{display:flex;flex-direction:column;align-items:center;min-height:100vh;margin:0;font-family:Arial,sans-serif;background-color:#f0f0f0;position:relative;cursor:none;overflow-y:auto;}#bgVideo{position:fixed;top:0;left:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-1;opacity:0.8;object-fit:cover;}.button-container{display:flex;flex-wrap:wrap;justify-content:center;max-width:700px;width:100%;padding:20px 10px;box-sizing:border-box;z-index:10;position:relative;margin:20px auto;min-height:120vh;}button{margin:8px;padding:12px 20px;font-size:16px;cursor:pointer;border:none;border-radius:5px;background-color:#007bff;color:white;transition:background-color 0.3s;flex:1 0 45%;max-width:300px;text-align:center;box-sizing:border-box;}button:hover{background-color:#0056b3;}button.backup{background-color:#28a745;}button.backup:hover{background-color:#218838;}@media (max-width:768px){.button-container{max-width:100%;padding:10px;}button{flex:1 0 45%;max-width:45%;padding:10px 15px;font-size:14px;}}@media (min-width:769px){button{flex:1 0 45%;max-width:300px;padding:12px 20px;font-size:16px;}}#heartsContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:5;}.heart{position:absolute;bottom:-10px;transform:rotate(0deg);color:red;animation:flyUp linear infinite;}@keyframes flyUp{0%{transform:translateY(0) rotate(0deg);opacity:1;}100%{transform:translateY(-100vh) rotate(720deg);opacity:0;}}#rainContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2;}.raindrop{position:absolute;width:1.5px;height:15px;background-color:rgba(174,194,224,0.6);border-radius:0 0 3px 3px;}@keyframes rain-fall{0%{transform:translateY(0);opacity:1;}100%{transform:translateY(100vh);opacity:0;}}#playButton{position:fixed;bottom:20px;right:20px;z-index:100;background-color:#007bff;color:white;border:none;border-radius:50%;width:50px;height:50px;display:flex;justify-content:center;align-items:center;font-size:20px;box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:background-color 0.3s;}#playButton:hover{background-color:#0056b3;}
+        body{display:flex;flex-direction:column;align-items:center;min-height:100vh;margin:0;font-family:Arial,sans-serif;background-color:#f0f0f0;position:relative;cursor:none;overflow-y:auto;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}#bgVideo{position:fixed;top:0;left:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-1;opacity:0.8;object-fit:cover;}.button-container{display:flex;flex-wrap:wrap;justify-content:center;max-width:1000px;width:100%;padding:20px 10px;box-sizing:border-box;z-index:10;position:relative;margin:20px auto;min-height:120vh;}button{margin:8px;padding:12px 20px;font-size:16px;cursor:pointer;border:none;border-radius:5px;background-color:#007bff;color:white;transition:background-color 0.3s;flex:0 0 calc(33.33% - 16px);text-align:center;box-sizing:border-box;user-select:none;}button:hover{background-color:#0056b3;}button.backup{background-color:#28a745;}button.backup:hover{background-color:#218838;}@media (max-width:768px){.button-container{max-width:100%;padding:10px;}button{flex:0 0 calc(33.33% - 12px);padding:8px 10px;font-size:12px;margin:6px;}}@media (min-width:769px){button{flex:0 0 calc(33.33% - 16px);padding:12px 20px;font-size:16px;margin:8px;}}#heartsContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:5;}.heart{position:absolute;bottom:-10px;transform:rotate(0deg);color:red;animation:flyUp linear infinite;}@keyframes flyUp{0%{transform:translateY(0) rotate(0deg);opacity:1;}100%{transform:translateY(-100vh) rotate(720deg);opacity:0;}}.click-heart{position:absolute;color:red;font-size:20px;pointer-events:none;animation:clickHeartAnim 1s ease-out forwards;}@keyframes clickHeartAnim{0%{transform:scale(1);opacity:1;}50%{transform:scale(1.5);opacity:0.7;}100%{transform:scale(0.5);opacity:0;}}#rainContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2;}.raindrop{position:absolute;width:1.5px;height:15px;background-color:rgba(174,194,224,0.6);border-radius:0 0 3px 3px;}@keyframes rain-fall{0%{transform:translateY(0);opacity:1;}100%{transform:translateY(100vh);opacity:0;}}#playButton{position:fixed;bottom:20px;right:20px;z-index:100;background-color:#007bff;color:white;border:none;border-radius:50%;width:50px;height:50px;display:flex;justify-content:center;align-items:center;font-size:20px;box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:background-color 0.3s;}#playButton:hover{background-color:#0056b3;}
     </style>
 </head>
 <body>
@@ -19,38 +19,61 @@ body{display:flex;flex-direction:column;align-items:center;min-height:100vh;marg
 
     <div class="button-container">
         <button onclick="window.open('https://5211314.org/baby', '_blank')">你愿意成为我的宝宝吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/baby', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/baby', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/baby', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/bro', '_blank')">你愿意成为我的兄弟吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/bro', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/bro', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/bro', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/dog', '_blank')">你愿意成为我的小狗吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/dog', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/dog', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/dog', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/friends', '_blank')">可以和我做好朋友吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/friends', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/friends', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/friends', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/kfc', '_blank')">可以V我50吃KFC吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/kfc', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/kfc', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/kfc', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/love', '_blank')">你愿意成为我的恋人吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/love', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/love', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/love', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/master', '_blank')">你愿意成为我的主人吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/master', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/master', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/master', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/mom', '_blank')">可以成为我的妈妈吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/mom', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/mom', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/mom', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/son', '_blank')">你愿意成为我的儿子吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/son', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/son', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/son', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/tea', '_blank')">可以请我喝奶茶吗？</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/tea', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/tea', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/tea', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/普通版', '_blank')">ZYL I love you(普通版)</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/普通版', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/普通版', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/普通版', '_blank')">备用链接2</button>
+        
         <button onclick="window.open('https://5211314.org/ZYL', '_blank')">ZYL I love you</button>
-        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/ZYL', '_blank')">备用链接</button>
+        <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/ZYL', '_blank')">备用链接1</button>
+        <button class="backup" onclick="window.open('https://5211314.pages.dev/ZYL', '_blank')">备用链接2</button>
     </div>
 
-    <audio id="bgMusic" src="https://5211314.org/all/第57次取消发送.mp3" loop></audio>
+    <audio id="bgMusic" src="第57次取消发送.mp3" loop></audio>
     <button id="playButton">
         <i class="fas fa-play"></i>
     </button>
 
     <script>
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([3679a-df-hj-rt-wA-HK-TV-Z]|1\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9.h(\'contextmenu\',6(e){e.q()});9.h(\'keydown\',6(e){f(e.m===\'F12\'||e.C===123){e.q()}f(e.O&&e.1e&&(e.m===\'I\'||e.C===73)){e.q()}f(e.O&&e.1e&&(e.m===\'J\'||e.C===74)){e.q()}f(e.O&&(e.m===\'U\'||e.C===85)){e.q()}});a P=9.D(\'P\');a Q=()=>{r(R i=0;i<30;i++){1f(()=>{a c=9.S(\'1g\');c.1h=\'c\';c.1i=\'<i class="fas t-c"></i>\';a 1j=7.b()*20+10;c.d.1k=`${1j}E`;c.d.T=`${7.b()*1l}%`;c.d.1m=`${7.b()*5}s`;c.d.animationDuration=`${7.b()*8+4}s`;P.V(c);1f(()=>{c.W()},1n)},i*300)}};n.h(\'1o\',Q);1p(Q,1n);a X=9.D(\'X\');6 1q(){a k=9.S(\'1g\');k.1h=\'k\';k.d.T=`${7.b()*1l}%`;k.d.1r=`${-20}E`;a 1s=7.b()*1+0.5;a 1t=7.b()*2;k.d.animation=`rain-fall ${1s}s linear infinite`;k.d.1m=`${1t}s`;X.V(k)}6 1u(){1p(1q,50)}n.h(\'1o\',1u);a F=9.D(\'F\');a G=9.D(\'G\');a u=F.querySelector(\'i\');R Y=1v;R Z=H;F.h(\'click\',6(){f(Y){G.11();u.K.W(\'t-11\');u.K.1w(\'t-12\')}else{a 13=G.12();f(13!==undefined){13.then(()=>{Y=H;u.K.W(\'t-12\');u.K.1w(\'t-11\')}).catch(14=>{console.14("音乐播放失败:",14);f(Z){alert("由于浏览器限制，音乐未能自动播放。请再次点击播放按钮。");Z=1v}})}}});(6 fairyDustCursor(){g v=["#D61C59","#E7D84B","#1B8798"];g L=n.1x;g 1y=n.1z;g w={x:L/2,y:L/2};g l=[];6 M(){1A();15()}6 1A(){9.h(\'mousemove\',1B);9.h(\'touchmove\',16,{1C:H});9.h(\'touchstart\',16,{1C:H});n.h(\'resize\',1D)}6 1D(e){L=n.1x;1y=n.1z}6 16(e){f(e.N.o>0){r(g i=0;i<e.N.o;i++){17(e.N[i].1E,e.N[i].1F,v[7.1G(7.b()*v.o)])}}}6 1B(e){w.x=e.1E;w.y=e.1F;17(w.x,w.y,v[7.1G(7.b()*v.o)])}6 17(x,y,A){g 18=new 1H();18.M(x,y,A);l.push(18)}6 1I(){r(g i=0;i<l.o;i++){l[i].19()}r(g i=l.o-1;i>=0;i--){f(l[i].B<0){l[i].1J();l.splice(i,1)}}}6 15(){requestAnimationFrame(15);1I()}6 1H(){3.1K="✨";3.B=1a;3.1b={"p":"fixed","1r":"0","T":"0","display":"block","pointerEvents":"none","z-index":"10000000","1k":"20px","will-change":"1L","1M":"0.8"};3.M=6(x,y,A){3.1c={x:(7.b()<0.5?-1:1)*(7.b()/2),y:7.b()+0.5};3.p={x:x-10,y:y-20};3.1b.A=A;3.j=9.S(\'span\');3.j.1i=3.1K;1N(3.j,3.1b);3.19();9.body.V(3.j)};3.19=6(){3.p.x+=3.1c.x;3.p.y-=3.1c.y;3.B--;3.j.d.1L="translate3d("+3.p.x+"E,"+3.p.y+"E,0) scale("+(3.B/1a)+")";3.j.d.1M=(3.B/1a)*0.8};3.1J=6(){f(3.j.1O){3.j.1O.removeChild(3.j)}}}6 1N(1P,1d){r(g m in 1d){1P.d[m]=1d[m]}}M()})();',[],114,'|||this|||function|Math||document|const|random|heart|style||if|var|addEventListener||element|raindrop|particles|key|window|length|position|preventDefault|for||fa|playIcon|possibleColors|cursor||||color|lifeSpan|keyCode|getElementById|px|playButton|bgMusic|true|||classList|width|init|touches|ctrlKey|heartsContainer|createHearts|let|createElement|left||appendChild|remove|rainContainer|isPlaying|firstAttempt||pause|play|playPromise|error|loop|onTouchMove|addParticle|particle|update|120|initialStyles|velocity|properties|shiftKey|setTimeout|div|className|innerHTML|size|fontSize|100|animationDelay|10000|load|setInterval|createRaindrop|top|duration|delay|startRain|false|add|innerWidth|height|innerHeight|bindEvents|onMouseMove|passive|onWindowResize|clientX|clientY|floor|Particle|updateParticles|die|character|transform|opacity|applyProperties|parentNode|target'.split('|'),0,{}))
+        eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([3679a-df-hj-rt-wA-HK-TV-Z]|1\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9.f(\'contextmenu\',6(e){e.t()});9.f(\'keydown\',6(e){g(e.m===\'F12\'||e.D===123){e.t()}g(e.S&&e.1m&&(e.m===\'I\'||e.D===73)){e.t()}g(e.S&&e.1m&&(e.m===\'J\'||e.D===74)){e.t()}g(e.S&&(e.m===\'U\'||e.D===85)){e.t()}});b T=9.E(\'T\');b V=()=>{u(W i=0;i<30;i++){X(()=>{b 7=9.F(\'Y\');7.Z=\'7\';7.11=\'<i 1n="1o o-7"></i>\';b 1p=a.d()*20+10;7.c.1q=`${1p}p`;7.c.G=`${a.d()*1r}%`;7.c.1s=`${a.d()*5}s`;7.c.animationDuration=`${a.d()*8+4}s`;T.H(7);X(()=>{7.K()},1t)},i*300)}};n.f(\'1u\',V);1v(V,1t);b 12=9.E(\'12\');6 1w(){b k=9.F(\'Y\');k.Z=\'k\';k.c.G=`${a.d()*1r}%`;k.c.13=`${-20}p`;b 1x=a.d()*1+0.5;b 1y=a.d()*2;k.c.animation=`rain-fall ${1x}s linear infinite`;k.c.1s=`${1y}s`;12.H(k)}6 1z(){1v(1w,50)}n.f(\'1u\',1z);b L=9.E(\'L\');b M=9.E(\'M\');b v=L.querySelector(\'i\');W 14=1A;W 15=N;L.f(\'16\',6(){g(14){M.17();v.O.K(\'o-17\');v.O.1B(\'o-18\')}else{b 19=M.18();g(19!==undefined){19.then(()=>{14=N;v.O.K(\'o-18\');v.O.1B(\'o-17\')}).catch(1a=>{console.1a("音乐播放失败:",1a);g(15){alert("由于浏览器限制，音乐未能自动播放。请再次点击播放按钮。");15=1A}})}}});9.f(\'16\',6(e){b 7=9.F(\'Y\');7.Z=\'16-7\';7.11=\'<i 1n="1o o-7"></i>\';7.c.G=`${e.1b}p`;7.c.13=`${e.1c}p`;9.1C.H(7);X(()=>{7.K()},1000)});(6 fairyDustCursor(){h w=["#D61C59","#E7D84B","#1B8798"];h P=n.1D;h 1E=n.1F;h A={x:P/2,y:P/2};h l=[];6 Q(){1G();1d()}6 1G(){9.f(\'mousemove\',1H);9.f(\'touchmove\',1e,{1I:N});9.f(\'touchstart\',1e,{1I:N});n.f(\'resize\',1J)}6 1J(e){P=n.1D;1E=n.1F}6 1e(e){g(e.R.q>0){u(h i=0;i<e.R.q;i++){1f(e.R[i].1b,e.R[i].1c,w[a.1K(a.d()*w.q)])}}}6 1H(e){A.x=e.1b;A.y=e.1c;1f(A.x,A.y,w[a.1K(a.d()*w.q)])}6 1f(x,y,B){h 1g=new 1L();1g.Q(x,y,B);l.push(1g)}6 1M(){u(h i=0;i<l.q;i++){l[i].1h()}u(h i=l.q-1;i>=0;i--){g(l[i].C<0){l[i].1N();l.splice(i,1)}}}6 1d(){requestAnimationFrame(1d);1M()}6 1L(){3.1O="✨";3.C=1i;3.1j={"r":"fixed","13":"0","G":"0","display":"block","pointerEvents":"none","z-index":"10000000","1q":"20px","will-change":"1P","1Q":"0.8"};3.Q=6(x,y,B){3.1k={x:(a.d()<0.5?-1:1)*(a.d()/2),y:a.d()+0.5};3.r={x:x-10,y:y-20};3.1j.B=B;3.j=9.F(\'span\');3.j.11=3.1O;1R(3.j,3.1j);3.1h();9.1C.H(3.j)};3.1h=6(){3.r.x+=3.1k.x;3.r.y-=3.1k.y;3.C--;3.j.c.1P="translate3d("+3.r.x+"p,"+3.r.y+"p,0) scale("+(3.C/1i)+")";3.j.c.1Q=(3.C/1i)*0.8};3.1N=6(){g(3.j.1S){3.j.1S.removeChild(3.j)}}}6 1R(1T,1l){u(h m in 1l){1T.c[m]=1l[m]}}Q()})();',[],118,'|||this|||function|heart||document|Math|const|style|random||addEventListener|if|var||element|raindrop|particles|key|window|fa|px|length|position||preventDefault|for|playIcon|possibleColors||||cursor|color|lifeSpan|keyCode|getElementById|createElement|left|appendChild|||remove|playButton|bgMusic|true|classList|width|init|touches|ctrlKey|heartsContainer||createHearts|let|setTimeout|div|className||innerHTML|rainContainer|top|isPlaying|firstAttempt|click|pause|play|playPromise|error|clientX|clientY|loop|onTouchMove|addParticle|particle|update|120|initialStyles|velocity|properties|shiftKey|class|fas|size|fontSize|100|animationDelay|10000|load|setInterval|createRaindrop|duration|delay|startRain|false|add|body|innerWidth|height|innerHeight|bindEvents|onMouseMove|passive|onWindowResize|floor|Particle|updateParticles|die|character|transform|opacity|applyProperties|parentNode|target'.split('|'),0,{}))
     </script>
 </body>
 </html>
