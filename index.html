@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>按钮跳转页面</title>
+    <title>动态主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
     <style>
-        body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;font-family:Arial,sans-serif;background-color:#f0f0f0;}.button-container{display:flex;flex-wrap:wrap;justify-content:center;max-width:700px;width:100%;padding:0 10px;box-sizing:border-box;}button{margin:8px;padding:12px 20px;font-size:16px;cursor:pointer;border:none;border-radius:5px;background-color:#007bff;color:white;transition:background-color 0.3s;flex:1 0 45%;max-width:300px;text-align:center;box-sizing:border-box;}button:hover{background-color:#0056b3;}button.backup{background-color:#28a745;}button.backup:hover{background-color:#218838;}@media (max-width:768px){.button-container{max-width:100%;}button{flex:1 0 45%;max-width:45%;padding:10px 15px;font-size:14px;}}@media (min-width:769px){button{flex:1 0 45%;max-width:300px;padding:12px 20px;font-size:16px;}}</style>
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0;font-family:Arial,sans-serif;background-color:#f0f0f0;overflow:hidden;position:relative;cursor:none;}#bgVideo{position:fixed;top:0;left:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-1;opacity:0.8;object-fit:cover;}.button-container{display:flex;flex-wrap:wrap;justify-content:center;max-width:700px;width:100%;padding:0 10px;box-sizing:border-box;z-index:10;position:relative;}button{margin:8px;padding:12px 20px;font-size:16px;cursor:pointer;border:none;border-radius:5px;background-color:#007bff;color:white;transition:background-color 0.3s;flex:1 0 45%;max-width:300px;text-align:center;box-sizing:border-box;}button:hover{background-color:#0056b3;}button.backup{background-color:#28a745;}button.backup:hover{background-color:#218838;}@media (max-width:768px){.button-container{max-width:100%;}button{flex:1 0 45%;max-width:45%;padding:10px 15px;font-size:14px;}}@media (min-width:769px){button{flex:1 0 45%;max-width:300px;padding:12px 20px;font-size:16px;}}#heartsContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:5;}.heart{position:absolute;bottom:-10px;transform:rotate(0deg);color:red;animation:flyUp linear infinite;}@keyframes flyUp{0%{transform:translateY(0) rotate(0deg);opacity:1;}100%{transform:translateY(-100vh) rotate(720deg);opacity:0;}}#rainContainer{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2;}.raindrop{position:absolute;width:1.5px;height:15px;background-color:rgba(174,194,224,0.6);border-radius:0 0 3px 3px;}@keyframes rain-fall{0%{transform:translateY(0);opacity:1;}100%{transform:translateY(100vh);opacity:0;}}#playButton{position:fixed;bottom:20px;right:20px;z-index:100;background-color:#007bff;color:white;border:none;border-radius:50%;width:50px;height:50px;display:flex;justify-content:center;align-items:center;font-size:20px;box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:background-color 0.3s;}#playButton:hover{background-color:#0056b3;}
+    </style>
 </head>
 <body>
+    <video autoplay muted loop id="bgVideo" src="樱花.mp4"></video>
+
+    <div id="heartsContainer"></div>
+    
+    <div id="rainContainer"></div>
+
     <div class="button-container">
         <button onclick="window.open('https://5211314.org/baby', '_blank')">你愿意成为我的宝宝吗？</button>
         <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/baby', '_blank')">备用链接</button>
@@ -36,5 +45,14 @@
         <button onclick="window.open('https://5211314.org/ZYL', '_blank')">ZYL I love you</button>
         <button class="backup" onclick="window.open('https://kevin-x-du.github.io/love_code/ZYL', '_blank')">备用链接</button>
     </div>
+
+    <audio id="bgMusic" src="music.mp3" loop></audio>
+    <button id="playButton">
+        <i class="fas fa-play"></i>
+    </button>
+
+    <script>
+eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([3679a-df-hj-rt-wA-HK-TV-Z]|1\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9.g(\'contextmenu\',6(e){e.q()});9.g(\'keydown\',6(e){h(e.m===\'F12\'||e.C===123){e.q()}h(e.N&&e.1b&&(e.m===\'I\'||e.C===73)){e.q()}h(e.N&&e.1b&&(e.m===\'J\'||e.C===74)){e.q()}h(e.N&&(e.m===\'U\'||e.C===85)){e.q()}});a O=9.D(\'O\');a P=()=>{r(1c i=0;i<30;i++){1d(()=>{a c=9.Q(\'1e\');c.1f=\'c\';c.1g=\'<i class="fas t-c"></i>\';a 1h=7.b()*20+10;c.d.1i=`${1h}E`;c.d.R=`${7.b()*1j}%`;c.d.1k=`${7.b()*5}s`;c.d.animationDuration=`${7.b()*8+4}s`;O.S(c);1d(()=>{c.T()},1l)},i*300)}};n.g(\'1m\',P);1n(P,1l);a V=9.D(\'V\');6 1o(){a k=9.Q(\'1e\');k.1f=\'k\';k.d.R=`${7.b()*1j}%`;k.d.1p=`${-20}E`;a 1q=7.b()*1+0.5;a 1r=7.b()*2;k.d.animation=`rain-fall ${1q}s linear infinite`;k.d.1k=`${1r}s`;V.S(k)}6 1s(){1n(1o,50)}n.g(\'1m\',1s);a F=9.D(\'F\');a G=9.D(\'G\');a u=F.querySelector(\'i\');1c W=false;F.g(\'click\',6(){h(W){G.X();u.H.T(\'t-X\');u.H.1t(\'t-Y\')}else{a Z=G.Y();h(Z!==undefined){Z.then(()=>{W=true;u.H.T(\'t-Y\');u.H.1t(\'t-X\')}).catch(11=>{console.11("音乐播放失败:",11);alert("由于浏览器限制，音乐未能自动播放。请再次点击播放按钮。")})}}});(6 fairyDustCursor(){f v=["#D61C59","#E7D84B","#1B8798"];f K=n.1u;f 1v=n.1w;f w={x:K/2,y:K/2};f l=[];6 L(){1x();12()}6 1x(){9.g(\'mousemove\',1y);9.g(\'touchmove\',13);9.g(\'touchstart\',13);n.g(\'resize\',1z)}6 1z(e){K=n.1u;1v=n.1w}6 13(e){h(e.M.o>0){r(f i=0;i<e.M.o;i++){14(e.M[i].1A,e.M[i].1B,v[7.1C(7.b()*v.o)])}}}6 1y(e){w.x=e.1A;w.y=e.1B;14(w.x,w.y,v[7.1C(7.b()*v.o)])}6 14(x,y,A){f 15=new 1D();15.L(x,y,A);l.push(15)}6 1E(){r(f i=0;i<l.o;i++){l[i].16()}r(f i=l.o-1;i>=0;i--){h(l[i].B<0){l[i].1F();l.splice(i,1)}}}6 12(){requestAnimationFrame(12);1E()}6 1D(){3.1G="✨";3.B=17;3.18={"p":"fixed","1p":"0","R":"0","display":"block","pointerEvents":"none","z-index":"10000000","1i":"20px","will-change":"1H","1I":"0.8"};3.L=6(x,y,A){3.19={x:(7.b()<0.5?-1:1)*(7.b()/2),y:7.b()+0.5};3.p={x:x-10,y:y-20};3.18.A=A;3.j=9.Q(\'span\');3.j.1g=3.1G;1J(3.j,3.18);3.16();9.body.S(3.j)};3.16=6(){3.p.x+=3.19.x;3.p.y-=3.19.y;3.B--;3.j.d.1H="translate3d("+3.p.x+"E,"+3.p.y+"E,0) scale("+(3.B/17)+")";3.j.d.1I=(3.B/17)*0.8};3.1F=6(){h(3.j.1K){3.j.1K.removeChild(3.j)}}}6 1J(1L,1a){r(f m in 1a){1L.d[m]=1a[m]}}L()})();',[],110,'|||this|||function|Math||document|const|random|heart|style||var|addEventListener|if||element|raindrop|particles|key|window|length|position|preventDefault|for||fa|playIcon|possibleColors|cursor||||color|lifeSpan|keyCode|getElementById|px|playButton|bgMusic|classList|||width|init|touches|ctrlKey|heartsContainer|createHearts|createElement|left|appendChild|remove||rainContainer|isPlaying|pause|play|playPromise||error|loop|onTouchMove|addParticle|particle|update|120|initialStyles|velocity|properties|shiftKey|let|setTimeout|div|className|innerHTML|size|fontSize|100|animationDelay|10000|load|setInterval|createRaindrop|top|duration|delay|startRain|add|innerWidth|height|innerHeight|bindEvents|onMouseMove|onWindowResize|clientX|clientY|floor|Particle|updateParticles|die|character|transform|opacity|applyProperties|parentNode|target'.split('|'),0,{}))
+    </script>
 </body>
 </html>
