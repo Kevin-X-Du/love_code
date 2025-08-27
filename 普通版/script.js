@@ -1,1 +1,372 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([6-9j-mpqu-wA-Z]|[12]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(7 fairyDustCursor(){9 12=["#D61C59","#E7D84B","#1B8798"];9 J=m.1Q;9 W=m.1R;9 13={x:J/2,y:J/2};9 8=[];7 19(){1S();1l()}7 1S(){I.X(\'mousemove\',1T);I.X(\'touchmove\',1m);I.X(\'touchstart\',1m);m.X(\'1U\',1V)}7 1V(e){J=m.1Q;W=m.1R}7 1m(e){l(e.1a.j>0){w(9 i=0;i<e.1a.j;i++){1n(e.1a[i].1o,e.1a[i].1p,12[k.1W(k.Q()*12.j)])}}}7 1T(e){13.x=e.1o;13.y=e.1p;1n(13.x,13.y,12[k.1W(k.Q()*12.j)])}7 1n(x,y,S){9 1q=D K();1q.19(x,y,S);8.1X(1q)}7 1Y(){w(9 i=0;i<8.j;i++){8[i].L()}w(9 i=8.j-1;i>=0;i--){l(8[i].1b<0){8[i].1Z();8.21(i,1)}}}7 1l(){M(1l);1Y()}7 K(){6.22="*";6.1b=23;6.1r={"A":"fixed","24":"0","26":"0","display":"block","pointerEvents":"none","z-27":"10000000","fontSize":"20px","will-change":"1s"};6.19=7(x,y,S){6.E={x:(k.Q()<0.5?-1:1)*(k.Q()/2),y:1};6.A={x:x-10,y:y-20};6.1r.S=S;6.N=I.1t(\'span\');6.N.innerHTML=6.22;28(6.N,6.1r);6.L();I.1c.29(6.N)};6.L=7(){6.A.x+=6.E.x;6.A.y+=6.E.y;6.1b--;6.N.1u.1s="translate3d("+6.A.x+"px,"+6.A.y+"px,0) Y("+(6.1b/23)+")"};6.1Z=7(){l(6.N.1v){6.N.1v.2a(6.N)}}}7 28(2b,1w){w(9 1x in 1w){2b.1u[1x]=1w[1x]}}19()})();(7(e,t,a){7 n(){o();r()}7 r(){w(9 e=0;e<d.j;e++){l(d[e].1e<=0){l(d[e].el.1v===t.1c){t.1c.2a(d[e].el)}d.21(e,1);e--}2c{d[e].y--;d[e].Y+=.004;d[e].1e-=.013;d[e].el.1u.cssText="26:"+d[e].x+"px;24:"+d[e].y+"px;opacity:"+d[e].1e+";1s:Y("+d[e].Y+","+d[e].Y+") rotate(45deg);background:"+d[e].S+";z-27:99999"}}M(r)}7 o(){9 1y="7"==1g e.1z&&e.1z;e.1z=7(2e){1y&&1y();i(2e)}}7 i(e){9 a=t.1t("div");a.className="heart";d.1X({el:a,x:e.1o-5,y:e.1p-5,Y:1,1e:1,S:s()});t.1c.29(a)}7 s(){q"rgb("+~~(1A*k.Q())+","+~~(1A*k.Q())+","+~~(1A*k.Q())+")"}9 d=[];e.M=(7(){q e.M||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||7(2f){1B(2f,1e3/60)}})();n()})(m,I);9 u={8:{j:500,R:2,E:100,1C:-0.75,B:30,},};(7(){9 b=0;9 c=["ms","moz","webkit","o"];w(9 a=0;a<c.j&&!m.M;++a){m.M=m[c[a]+"RequestAnimationFrame"];m.1D=m[c[a]+"CancelAnimationFrame"]||m[c[a]+"CancelRequestAnimationFrame"]}l(!m.M){m.M=7(h,e){9 d=D 2g().2h();9 f=k.max(0,16-(d-b));9 g=m.1B(7(){h(d+f)},f);b=d+f;q g}}l(!m.1D){m.1D=7(d){clearTimeout(d)}}}());9 G=(7(){7 G(x,y){6.x=(1g x!==\'1E\')?x:0;6.y=(1g y!==\'1E\')?y:0}G.O.2i=7(){q D G(6.x,6.y)};G.O.j=7(j){l(1g j==\'1E\')q k.sqrt(6.x*6.x+6.y*6.y);6.1F();6.x*=j;6.y*=j;q 6};G.O.1F=7(){9 j=6.j();l(j===0)q 6;6.x/=j;6.y/=j;q 6};q G})();9 K=(7(){7 K(){6.A=D G();6.E=D G();6.14=D G();6.T=0}K.O.2j=7(x,y,dx,dy){6.A.x=x;6.A.y=y;6.E.x=dx;6.E.y=dy;6.14.x=dx*u.8.1C;6.14.y=dy*u.8.1C;6.T=0};K.O.L=7(C){6.A.x+=6.E.x*C;6.A.y+=6.E.y*C;6.E.x+=6.14.x*C;6.E.y+=6.14.y*C;6.T+=C};K.O.Z=7(H,P){7 2k(t){q(--t)*t*t+1}9 B=P.J*2k(6.T/u.8.R);l(B<=0||6.T>=u.8.R)q;H.2l=1-6.T/u.8.R;H.drawImage(P,6.A.x-B/2,6.A.y-B/2,B,B)};q K})();9 U=(7(){9 8,p=0,v=0,R=u.8.R;7 U(j){8=D Array(j);w(9 i=0;i<8.j;i++)8[i]=D K()}U.O.2m=7(x,y,dx,dy){8[v].2j(x,y,dx,dy);v++;l(v==8.j)v=0;l(p==v){p++;l(p==8.j)p=0}};U.O.L=7(C){9 i;l(p<v){w(i=p;i<v;i++)8[i].L(C)}l(v<p){w(i=p;i<8.j;i++)8[i].L(C);w(i=0;i<v;i++)8[i].L(C)}2n(8[p].T>=R&&p!=v){p++;l(p==8.j)p=0}};U.O.Z=7(H,P){9 i;l(p<v){w(i=p;i<v;i++)8[i].Z(H,P)}l(v<p){w(i=p;i<8.j;i++)8[i].Z(H,P);w(i=0;i<v;i++)8[i].Z(H,P)}};q U})();(7(F){l(!F){console.error("Canvas N with id \'2o\' not found.");q}9 H=F.2p(\'2d\'),8=D U(u.8.j),2q=u.8.j/u.8.R,1G;7 1H(t){q D G(160*k.pow(k.sin(t),3),130*k.1h(t)-50*k.1h(2*t)-20*k.1h(3*t)-10*k.1h(4*t)+25)}9 P=(7(){9 18=I.1t(\'F\'),V=18.2p(\'2d\');18.J=u.8.B;18.W=u.8.B;7 to(t){9 11=1H(t);11.x=u.8.B/2+11.x*u.8.B/2r;11.y=u.8.B/2-11.y*u.8.B/2r;q 11}V.beginPath();9 t=-k.PI;9 1J=to(t);V.moveTo(1J.x,1J.y);2n(t<k.PI){t+=0.01;9 1K=to(t);V.lineTo(1K.x,1K.y)}V.closePath();V.fillStyle=\'#ff30c5\';V.fill();9 1L=D Image();1L.src=18.toDataURL();q 1L})();7 1M(){M(1M);9 1j=D 2g().2h()/1000,C=1j-(1G||1j);1G=1j;H.clearRect(0,0,F.J,F.W);H.2l=1.0;9 2s=2q*C;w(9 i=0;i<2s;i++){9 1k=1H(k.PI-2*k.PI*k.Q());9 1N=1k.2i().1F().j(u.8.E);8.2m(F.J/2+1k.x,F.W/2-1k.y,1N.x,-1N.y)}8.L(C);8.Z(H,P)}7 1O(){F.J=F.clientWidth;F.W=F.clientHeight}m.X(\'1U\',1O);1B(7(){1O();1M()},10)})(I.getElementById(\'2o\'));7 1P(){}l(I.readyState===\'loading\'){I.X(\'DOMContentLoaded\',1P)}2c{1P()}',[],153,'||||||this|function|particles|var||||||||||length|Math|if|window|||firstActive|return||||settings|firstFree|for||||position|size|deltaTime|new|velocity|canvas|Point|context|document|width|Particle|update|requestAnimationFrame|element|prototype|image|random|duration|color|age|ParticlePool|offscreenContext|height|addEventListener|scale|draw||point|possibleColors|cursor|acceleration||||offscreenCanvas|init|touches|lifeSpan|body||alpha||typeof|cos||newTime|pos|loop|onTouchMove|addParticle|clientX|clientY|particle|initialStyles|transform|createElement|style|parentNode|properties|key|t_onclick|onclick|255|setTimeout|effect|cancelAnimationFrame|undefined|normalize|time|pointOnHeart||startPoint|currentPoint|heartImage|render|dir|onResize|calculateDays|innerWidth|innerHeight|bindEvents|onMouseMove|resize|onWindowResize|floor|push|updateParticles|die||splice|character|120|top||left|index|applyProperties|appendChild|removeChild|target|else||event|callback|Date|getTime|clone|initialize|ease|globalAlpha|add|while|pinkboard|getContext|particleRate|350|amount'.split('|'),0,{}))
+// --- Fairy Dust Cursor Script ---
+(function fairyDustCursor() {
+    var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"];
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    var cursor = {x: width/2, y: width/2};
+    var particles = [];
+
+    function init() {
+        bindEvents();
+        loop();
+    }
+
+    function bindEvents() {
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('touchmove', onTouchMove);
+        document.addEventListener('touchstart', onTouchMove);
+        window.addEventListener('resize', onWindowResize);
+    }
+
+    function onWindowResize(e) {
+        width = window.innerWidth;
+        height = window.innerHeight;
+    }
+
+    function onTouchMove(e) {
+        if(e.touches.length > 0) {
+            for(var i = 0; i < e.touches.length; i++) {
+                addParticle(e.touches[i].clientX, e.touches[i].clientY, possibleColors[Math.floor(Math.random()*possibleColors.length)]);
+            }
+        }
+    }
+
+    function onMouseMove(e) {
+        cursor.x = e.clientX;
+        cursor.y = e.clientY;
+        addParticle(cursor.x, cursor.y, possibleColors[Math.floor(Math.random()*possibleColors.length)]);
+    }
+
+    function addParticle(x, y, color) {
+        var particle = new Particle();
+        particle.init(x, y, color);
+        particles.push(particle);
+    }
+
+    function updateParticles() {
+        for(var i = 0; i < particles.length; i++) {
+            particles[i].update();
+        }
+        for(var i = particles.length -1; i >= 0; i--) {
+            if(particles[i].lifeSpan < 0) {
+                particles[i].die();
+                particles.splice(i, 1);
+            }
+        }
+    }
+
+    function loop() {
+        requestAnimationFrame(loop);
+        updateParticles();
+    }
+
+    function Particle() {
+        this.character = "*";
+        this.lifeSpan = 120; // Lifetime in frames
+        this.initialStyles = {
+            "position": "fixed",
+            "top": "0",
+            "left": "0",
+            "display": "block",
+            "pointerEvents": "none",
+            "z-index": "10000000",
+            "fontSize": "20px",
+            "will-change": "transform"
+        };
+
+        this.init = function(x, y, color) {
+            this.velocity = {
+                x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+                y: 1
+            };
+            this.position = {x: x - 10, y: y - 20};
+            this.initialStyles.color = color;
+
+            this.element = document.createElement('span');
+            this.element.innerHTML = this.character;
+            applyProperties(this.element, this.initialStyles);
+            this.update();
+            document.body.appendChild(this.element);
+        };
+
+        this.update = function() {
+            this.position.x += this.velocity.x;
+            this.position.y += this.velocity.y;
+            this.lifeSpan--;
+            this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (this.lifeSpan / 120) + ")";
+        };
+
+        this.die = function() {
+            if (this.element.parentNode) {
+                this.element.parentNode.removeChild(this.element);
+            }
+        };
+    }
+
+    function applyProperties(target, properties) {
+        for(var key in properties) {
+            target.style[key] = properties[key];
+        }
+    }
+
+    init();
+})();
+
+// --- Clicking Hearts Script ---
+(function(e,t,a){
+    function n(){
+        o();
+        r();
+    }
+    function r(){
+        for(var e=0;e<d.length;e++){
+            if(d[e].alpha<=0){
+                if(d[e].el.parentNode === t.body) {
+                   t.body.removeChild(d[e].el);
+                }
+                d.splice(e,1);
+                e--;
+            }else{
+                d[e].y--;
+                d[e].scale+=.004;
+                d[e].alpha-=.013;
+                d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999";
+            }
+        }
+        requestAnimationFrame(r);
+    }
+    function o(){
+        var t_onclick="function"==typeof e.onclick&&e.onclick;
+        e.onclick=function(event){
+            t_onclick&&t_onclick();
+            i(event);
+        }
+    }
+    function i(e){
+        var a=t.createElement("div");
+        a.className="heart";
+        d.push({
+            el:a,
+            x:e.clientX-5,
+            y:e.clientY-5,
+            scale:1,
+            alpha:1,
+            color:s()
+        });
+        t.body.appendChild(a);
+    }
+    function s(){
+        return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+    }
+    var d=[];
+    e.requestAnimationFrame=(function(){
+        return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(callback){setTimeout(callback,1e3/60)}
+    })();
+    n();
+})(window,document);
+
+// --- Original Heart Animation Script ---
+var settings = {
+    particles: {
+        length: 500,
+        duration: 2,
+        velocity: 100,
+        effect: -0.75,
+        size: 30,
+    },
+};
+
+(function(){var b=0;var c=["ms","moz","webkit","o"];for(var a=0;a<c.length&&!window.requestAnimationFrame;++a){window.requestAnimationFrame=window[c[a]+"RequestAnimationFrame"];window.cancelAnimationFrame=window[c[a]+"CancelAnimationFrame"]||window[c[a]+"CancelRequestAnimationFrame"]}if(!window.requestAnimationFrame){window.requestAnimationFrame=function(h,e){var d=new Date().getTime();var f=Math.max(0,16-(d-b));var g=window.setTimeout(function(){h(d+f)},f);b=d+f;return g}}if(!window.cancelAnimationFrame){window.cancelAnimationFrame=function(d){clearTimeout(d)}}}());
+
+var Point = (function() {
+    function Point(x, y) {
+        this.x = (typeof x !== 'undefined') ? x : 0;
+        this.y = (typeof y !== 'undefined') ? y : 0;
+    }
+    Point.prototype.clone = function() {return new Point(this.x, this.y);};
+    Point.prototype.length = function(length) {
+        if (typeof length == 'undefined') return Math.sqrt(this.x * this.x + this.y * this.y);
+        this.normalize();
+        this.x *= length;
+        this.y *= length;
+        return this;
+    };
+    Point.prototype.normalize = function() {
+        var length = this.length();
+        if (length === 0) return this;
+        this.x /= length;
+        this.y /= length;
+        return this;
+    };
+    return Point;
+})();
+
+var Particle = (function() {
+    function Particle() {
+        this.position = new Point();
+        this.velocity = new Point();
+        this.acceleration = new Point();
+        this.age = 0;
+    }
+    Particle.prototype.initialize = function(x, y, dx, dy) {
+        this.position.x = x;
+        this.position.y = y;
+        this.velocity.x = dx;
+        this.velocity.y = dy;
+        this.acceleration.x = dx * settings.particles.effect;
+        this.acceleration.y = dy * settings.particles.effect;
+        this.age = 0;
+    };
+    Particle.prototype.update = function(deltaTime) {
+        this.position.x += this.velocity.x * deltaTime;
+        this.position.y += this.velocity.y * deltaTime;
+        this.velocity.x += this.acceleration.x * deltaTime;
+        this.velocity.y += this.acceleration.y * deltaTime;
+        this.age += deltaTime;
+    };
+    Particle.prototype.draw = function(context, image) {
+        function ease(t) {return (--t) * t * t + 1;}
+        var size = image.width * ease(this.age / settings.particles.duration);
+        if (size <= 0 || this.age >= settings.particles.duration) return;
+        context.globalAlpha = 1 - this.age / settings.particles.duration;
+        context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
+    };
+    return Particle;
+})();
+
+var ParticlePool = (function() {
+    var particles, firstActive = 0, firstFree = 0, duration = settings.particles.duration;
+
+    function ParticlePool(length) {
+        particles = new Array(length);
+        for (var i = 0; i < particles.length; i++) particles[i] = new Particle();
+    }
+    ParticlePool.prototype.add = function(x, y, dx, dy) {
+        particles[firstFree].initialize(x, y, dx, dy);
+        firstFree++;
+        if (firstFree == particles.length) firstFree = 0;
+        if (firstActive == firstFree) {
+             firstActive++;
+             if (firstActive == particles.length) firstActive = 0;
+        }
+    };
+    ParticlePool.prototype.update = function(deltaTime) {
+        var i;
+        if (firstActive < firstFree) {
+            for (i = firstActive; i < firstFree; i++) particles[i].update(deltaTime);
+        }
+        if (firstFree < firstActive) {
+            for (i = firstActive; i < particles.length; i++) particles[i].update(deltaTime);
+            for (i = 0; i < firstFree; i++) particles[i].update(deltaTime);
+        }
+        while (particles[firstActive].age >= duration && firstActive != firstFree) {
+            firstActive++;
+            if (firstActive == particles.length) firstActive = 0;
+        }
+    };
+    ParticlePool.prototype.draw = function(context, image) {
+        var i;
+        if (firstActive < firstFree) {
+            for (i = firstActive; i < firstFree; i++) particles[i].draw(context, image);
+        }
+        if (firstFree < firstActive) {
+            for (i = firstActive; i < particles.length; i++) particles[i].draw(context, image);
+            for (i = 0; i < firstFree; i++) particles[i].draw(context, image);
+        }
+    };
+    return ParticlePool;
+})();
+
+(function(canvas) {
+    if (!canvas) {
+        console.error("Canvas element with id 'pinkboard' not found.");
+        return;
+    }
+    var context = canvas.getContext('2d'),
+        particles = new ParticlePool(settings.particles.length),
+        particleRate = settings.particles.length / settings.particles.duration,
+        time;
+
+    function pointOnHeart(t) {
+        return new Point(
+            160 * Math.pow(Math.sin(t), 3),
+            130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+        );
+    }
+
+    var image = (function() {
+        var offscreenCanvas = document.createElement('canvas'),
+            offscreenContext = offscreenCanvas.getContext('2d');
+        offscreenCanvas.width = settings.particles.size;
+        offscreenCanvas.height = settings.particles.size;
+
+        function to(t) {
+            var point = pointOnHeart(t);
+            point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
+            point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
+            return point;
+        }
+
+        offscreenContext.beginPath();
+        var t = -Math.PI;
+        var startPoint = to(t);
+        offscreenContext.moveTo(startPoint.x, startPoint.y);
+        while (t < Math.PI) {
+            t += 0.01;
+            var currentPoint = to(t);
+            offscreenContext.lineTo(currentPoint.x, currentPoint.y);
+        }
+        offscreenContext.closePath();
+        offscreenContext.fillStyle = '#ff30c5';
+        offscreenContext.fill();
+
+        var heartImage = new Image();
+        heartImage.src = offscreenCanvas.toDataURL();
+        return heartImage;
+    })();
+
+    function render() {
+        requestAnimationFrame(render);
+        var newTime = new Date().getTime() / 1000,
+            deltaTime = newTime - (time || newTime);
+        time = newTime;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.globalAlpha = 1.0;
+
+        var amount = particleRate * deltaTime;
+        for (var i = 0; i < amount; i++) {
+            var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
+            var dir = pos.clone().normalize().length(settings.particles.velocity);
+            particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
+        }
+
+        particles.update(deltaTime);
+        particles.draw(context, image);
+    }
+
+    function onResize() {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+    }
+    window.addEventListener('resize', onResize);
+
+    setTimeout(function() {
+        onResize();
+        render();
+    }, 10);
+
+})(document.getElementById('pinkboard'));
+
+// --- Calculate Days Script ---
+function calculateDays() {
+    // 移除所有文字显示逻辑，包括时间计数器
+    // 不再需要任何 DOM 更新
+}
+
+// 等待 DOM 加载
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', calculateDays);
+} else {
+    calculateDays();
+}
