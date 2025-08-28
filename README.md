@@ -11,7 +11,7 @@
 > **love-code** 备用链接2：https://5211314.pages.dev
 
 ### 10套表白源码展示
-![image.png]([https://5211314.org/all/images/1.png](https://github.com/Kevin-X-Du/love_code/blob/main/images/1.png))  
+![image.png](https://github.com/Kevin-X-Du/love_code/blob/main/images/1.png))  
 ![image.png](https://upload-images.jianshu.io/upload_images/13821160-773f036e969807a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)![image.png](https://upload-images.jianshu.io/upload_images/13821160-d23105c858bf3da4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ![image.png](https://upload-images.jianshu.io/upload_images/13821160-88080f6f0e22fd4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)&gt; 
